@@ -1,0 +1,230 @@
+{
+  "_format": "English texts laid over lessons.json: the same shape, text fields only. Lessons and lesson lists match by id, levels by n, colour rules by id; other lists by position. Anything left out (Quran text, letters, numbers, Quranic answer options) comes from lessons.json, and a lesson not here shows in Arabic. Raise version with every change.",
+  "_glossary": {
+    "تجويد": "Tajweed",
+    "النون الساكنة": "noon sakinah",
+    "التنوين": "tanween",
+    "الميم الساكنة": "meem sakinah",
+    "إظهار": "izhar (clear)",
+    "إدغام": "idgham (merging)",
+    "إدغام بغنة / بغير غنة": "idgham with / without ghunnah",
+    "إقلاب": "iqlab (conversion)",
+    "إخفاء": "ikhfa' (concealment)",
+    "غنة": "ghunnah (nasal sound, from the nose)",
+    "حركة / حركتان": "one count / two counts",
+    "مد": "madd (prolongation)",
+    "قلقلة": "qalqalah (echo)",
+    "تفخيم / ترقيق": "tafkhim (heavy) / tarqiq (light)",
+    "حروف الاستعلاء": "elevated (heavy) letters",
+    "حروف الحلق": "throat letters",
+    "مخرج / مخارج": "point of articulation (makharij)",
+    "صفات الحروف": "characteristics of the letters (sifat)",
+    "سكون / شدة": "sukun / shaddah",
+    "الوقف والابتداء": "stopping and starting (waqf and ibtida')",
+    "آية": "ayah (plural ayahs)",
+    "سورة": "surah",
+    "المصحف": "the Mushaf",
+    "التلقي والمشافهة": "listening to and reciting before a teacher",
+    "معلم مجاز": "qualified teacher (with ijazah)",
+    "أسماء الحروف": "alif, baa, taa, thaa, jeem, haa (ح), khaa, dal, dhal, raa, zay, seen, sheen, saad, daad, taa (ط), dhaa (ظ), 'ayn, ghayn, faa, qaaf, kaaf, laam, meem, noon, haa (ه), waw, yaa"
+  },
+  "schema": 1,
+  "version": 1,
+  "recitation": {
+    "reciter": "Sheikh Mahmoud Khalil Al-Husary (the teaching recitation, al-Mushaf al-Mu'allim)"
+  },
+  "colorGuide": {
+    "example": {
+      "src": "Al-Baqarah 79 (part of the ayah)",
+      "why": [
+        "Noon sakinah + 'ayn: izhar",
+        "Noon sakinah + dal: ikhfa'"
+      ]
+    },
+    "rules": [
+      {"id": "izhar", "name": "Izhar (clear)", "desc": "Before the throat letters: ء هـ ع ح غ خ"},
+      {"id": "idgham", "name": "Idgham (merging)", "desc": "Before the letters of «يرملون»"},
+      {"id": "iqlab", "name": "Iqlab (conversion)", "desc": "Before baa (ب)"},
+      {"id": "ikhfa", "name": "Ikhfa' (concealment)", "desc": "Before the other fifteen letters"}
+    ],
+    "pending": "Colours for madd, qalqalah and tafkhim will be added with their lessons.",
+    "tip": "The colour is there to help you find the rule; it is not a substitute for learning from a teacher."
+  },
+  "levels": [
+    {
+      "n": 1,
+      "title": "Level 1: Foundations",
+      "lessons": [
+        {"id": 1, "title": "Tajweed: its meaning, ruling and virtue"},
+        {"id": 2, "title": "Points of articulation (makharij)"},
+        {"id": 3, "title": "Characteristics of the letters (sifat)"},
+        {"id": 4, "title": "The sun and moon laam"}
+      ]
+    },
+    {
+      "n": 2,
+      "title": "Level 2: Noon and meem",
+      "lessons": [
+        {"id": 5, "title": "Noon sakinah and tanween: izhar"},
+        {"id": 6, "title": "Idgham (with and without ghunnah)"},
+        {"id": 7, "title": "Iqlab (conversion)"},
+        {"id": 8, "title": "Ikhfa' (concealment)"},
+        {"id": 9, "title": "Meem sakinah and its rules"},
+        {"id": 10, "title": "Ghunnah (nasal sound)"}
+      ]
+    },
+    {
+      "n": 3,
+      "title": "Level 3: Madd and delivery",
+      "lessons": [
+        {"id": 11, "title": "Natural madd (madd tabi'i)"},
+        {"id": 12, "title": "Joined and separated madd"},
+        {"id": 13, "title": "Madd al-leen, madd 'arid and madd lazim"},
+        {"id": 14, "title": "Qalqalah (echo)"},
+        {"id": 15, "title": "Heavy and light letters (tafkhim and tarqiq)"},
+        {"id": 16, "title": "Stopping and starting (waqf and ibtida')"}
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": 7,
+      "reviewNote": "Draft: a specialist has not reviewed this lesson yet, so its text and questions may change.",
+      "title": "Iqlab (conversion)",
+      "lede": "Turning noon sakinah or tanween into a hidden meem before baa (ب), keeping the ghunnah.",
+      "formula": [
+        {"caption": "Noon sakinah or tanween"},
+        {"caption": "One letter after it"},
+        {"glyph": "Iqlab", "caption": "A hidden meem with ghunnah"}
+      ],
+      "idea": {
+        "lead": "When baa (ب) comes after noon sakinah or tanween, the noon is pronounced as a meem, though it is not written as one, and that meem is then hidden before the baa, with ghunnah.",
+        "kidsLead": "When baa (ب) comes after a noon sakinah or tanween, we say the noon as a meem, and keep the humming sound from the nose for two counts.",
+        "how": [
+          {"term": "Conversion", "text": "The noon or tanween is pronounced as a meem, but not written as one."},
+          {"term": "Hiding", "text": "The meem is hidden before the baa: neither pronounced clearly nor merged."},
+          {"term": "Ghunnah", "text": "The nasal sound comes from the nose, for two counts."}
+        ],
+        "note": "Reciters differ on how the lips close in iqlab, so learn how it is done from your teacher, by listening and reciting."
+      },
+      "ayat": {
+        "legendNoon": "Noon sakinah or tanween",
+        "legendNext": "The baa after it",
+        "findHint": "Find where iqlab happens in each ayah, then bring the colours back to check.",
+        "items": [
+          {"src": "Al-Humazah 4 (part of the ayah)", "why": ["Noon sakinah + baa in one word"]},
+          {"src": "Al-Baqarah 27 (part of the ayah)", "why": ["Noon sakinah + baa across two words"]},
+          {"src": "Al-Mujadila 1 (part of the ayah)", "why": ["Tanween + baa"]}
+        ],
+        "tip": "In the Mushaf, iqlab is marked by a small meem above the noon, or in place of the second vowel mark of the tanween, as you can see in the ayahs above."
+      },
+      "quiz": [
+        {
+          "q": "What is the rule for the noon sakinah in:",
+          "options": ["Izhar", "Idgham", "Iqlab", "Ikhfa'"],
+          "why": "Baa comes after the noon sakinah, so the noon turns into a hidden meem, with ghunnah."
+        },
+        {
+          "q": "What is the rule for the tanween in:",
+          "options": ["Izhar", "Idgham", "Iqlab", "Ikhfa'"],
+          "why": "Tanween follows the rules of noon sakinah. Baa comes after it, so it turns into a hidden meem."
+        },
+        {
+          "q": "Which letter causes iqlab?",
+          "options": ["Baa (ب)", "Meem (م)", "Noon (ن)", "Waw (و)"],
+          "why": "Iqlab has one letter only: baa."
+        },
+        {
+          "q": "In iqlab, the noon turns into which letter?",
+          "options": ["Baa (ب)", "Meem (م)", "Waw (و)", "It does not change"],
+          "why": "The noon is pronounced as a meem, and that meem is then hidden before the baa."
+        },
+        {
+          "q": "Which of these has iqlab?",
+          "why": "In «أَنۢبِئْهُم», baa comes after the noon sakinah. «مِن قَبْلُ» has ikhfa', «مِنْ هَادٍ» has izhar, and «مَن يَقُولُ» has idgham with ghunnah."
+        },
+        {
+          "q": "How is iqlab marked in the Mushaf?",
+          "options": ["A small meem above the noon", "A sukun above the noon", "A shaddah on the baa", "It has no mark"],
+          "why": "A small meem is written above the noon, or in place of the second vowel mark of the tanween."
+        },
+        {
+          "q": "How long is the ghunnah in iqlab?",
+          "options": ["One count", "Two counts", "Four counts", "Six counts"],
+          "why": "The ghunnah in iqlab lasts two counts, as in ikhfa'."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Ikhfa' (concealment)",
+      "lede": "Pronouncing noon sakinah or tanween in a state between izhar and idgham, without a shaddah, keeping the ghunnah.",
+      "formula": [
+        {"caption": "Noon sakinah or tanween"},
+        {"glyph": "15", "caption": "letters that may come after it"},
+        {"glyph": "Ikhfa'", "caption": "Ghunnah for two counts"}
+      ],
+      "idea": {
+        "lead": "When one of the fifteen letters comes after noon sakinah or tanween, you neither pronounce the noon clearly nor merge it: you say it in a state between the two.",
+        "kidsLead": "When one of the fifteen letters comes after noon sakinah or tanween, we hide the noon: we don't say it clearly and don't merge it into the next letter, and we keep the humming sound from the nose for two counts.",
+        "how": [
+          {"term": "The tongue", "text": "It gets ready for the next letter's point of articulation, without touching the point of the noon."},
+          {"term": "Ghunnah", "text": "The nasal sound comes from the nose, for two counts."},
+          {"term": "Shaddah", "text": "There is no shaddah here; this is what tells ikhfa' apart from idgham."}
+        ],
+        "note": "The ghunnah is heavy before ص ض ط ظ ق, and light before the other ten letters."
+      },
+      "ayat": {
+        "legendNoon": "Noon sakinah or tanween",
+        "legendNext": "The letter after it",
+        "findHint": "Find where ikhfa' happens in each ayah, then bring the colours back to check.",
+        "items": [
+          {"src": "Al-Hujurat 13 (part of the ayah)", "why": ["Noon sakinah + dhal", "Noon sakinah + thaa"]},
+          {"src": "Fussilat 16 (part of the ayah)", "why": ["Tanween + saad (heavy ghunnah)"]},
+          {"src": "Al-Muddaththir 55", "why": ["Noon sakinah + sheen"]}
+        ],
+        "tip": "A hint from the script: in many Mushafs the hidden noon is written without a sukun, as you can see in the ayahs above."
+      },
+      "letters": {
+        "title": "The fifteen letters",
+        "hint": "The first letter of each word in this well-known line of verse is one of the letters of ikhfa'."
+      },
+      "quiz": [
+        {
+          "q": "What is the rule for the noon sakinah in:",
+          "options": ["Izhar", "Idgham", "Iqlab", "Ikhfa'"],
+          "why": "Qaaf is one of the fifteen letters of ikhfa', so the noon is hidden, with ghunnah. The ghunnah is heavy, because qaaf is an elevated (heavy) letter."
+        },
+        {
+          "q": "What is the rule for the noon sakinah in:",
+          "options": ["Izhar", "Idgham", "Iqlab", "Ikhfa'"],
+          "why": "Haa (ه) is a throat letter, so the noon is pronounced clearly, without hiding or merging: this is izhar."
+        },
+        {
+          "q": "Which of these has ikhfa'?",
+          "why": "Sheen is one of the letters of ikhfa'. «مَن يَقُولُ» has idgham with ghunnah, «مِن بَعْدِ» has iqlab, and «مِنْ هَادٍ» has izhar."
+        },
+        {
+          "q": "How long is the ghunnah in ikhfa'?",
+          "options": ["One count", "Two counts", "Four counts", "Six counts"],
+          "why": "The ghunnah in ikhfa' lasts two counts; one count is about the time it takes to fold or unfold a finger."
+        },
+        {
+          "q": "What is the rule for the noon sakinah in:",
+          "options": ["Izhar", "Idgham", "Iqlab", "Ikhfa'"],
+          "why": "Before baa, the noon turns into a hidden meem, with ghunnah: this is iqlab."
+        },
+        {
+          "q": "What is the rule for the noon sakinah in:",
+          "options": ["Izhar", "Idgham", "Iqlab", "Ikhfa'"],
+          "why": "Yaa is one of the letters of «يَنْمُو», so the noon merges into it with ghunnah."
+        },
+        {
+          "q": "What is the rule for the tanween in:",
+          "options": ["Izhar", "Idgham", "Iqlab", "Ikhfa'"],
+          "why": "Tanween follows the rules of noon sakinah. Saad is one of the letters of ikhfa', and the ghunnah is heavy with it, because saad is an elevated (heavy) letter."
+        }
+      ]
+    }
+  ]
+}
