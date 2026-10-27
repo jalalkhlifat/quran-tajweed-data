@@ -1,10 +1,11 @@
 {
   "schema": 1,
-  "version": 1,
+  "version": 2,
   "ayahRecording": "https://everyayah.com/data/{folder}/{sura3}{ayah3}.mp3",
   "suraTimings": "https://api.quran.com/api/v4/chapter_recitations/{recitation}/{sura}?segments=true",
   "pageFont": "https://static.qurancdn.com/fonts/quran/hafs/v2/ttf/p{page}.ttf",
   "pageFontTajweed": "https://quran.com/fonts/quran/hafs/v4/colrv1/ttf/p{page}.ttf",
+  "tafsir": "https://api.quran.com/api/v4/tafsirs/{tafsir}/by_ayah/{sura}:{ayah}",
   "_suraAudioSkip": "Per Quran.com recitation id: suras whose whole recording does not match its ayah times, or cannot be jumped in exactly (VBR). They play ayah by ayah.",
   "suraAudioSkip": {
     "1": [2, 7, 12, 26],
